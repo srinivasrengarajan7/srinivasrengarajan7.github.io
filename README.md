@@ -1,26 +1,12 @@
-# Academic Personal Website
+Code for my personal website
 
-Plain HTML + CSS + KaTeX. No build step. No framework.
 
 ## File structure
-
-```
 your-username.github.io/
-├── index.html          ← main page (edit this)
-├── notes.html          ← notes index page (edit this)
-├── style.css           ← all styling (edit this)
+├── index.html
+├── notes.html
+├── style.css
 ├── assets/
-│   └── photo.jpg       ← replace with your photo
+│   └── photo.jpg
 └── notes/
-    └── *.pdf           ← drop PDF notes here
-```
-
-## To add LaTeX
-
-Inline: `$f(x) = x^2$`
-Display: `$$\int_0^1 f(x)\,dx$$`
-or `\[ ... \]` / `\( ... \)`
-
-KaTeX renders automatically on page load.
-
-## Deployment: see DEPLOY.md
+    └── *.pdf
