@@ -1,0 +1,203 @@
+/* =====================================================
+   Academic personal website — style.css
+   Font: EB Garamond (body), Source Code Pro (mono)
+   ===================================================== */
+
+/* ---------- Reset & base ---------- */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 18px;           /* base: 1rem = 18px — comfortable for reading */
+}
+
+body {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #1a1a1a;
+  background: #fafaf8;
+}
+
+/* ---------- Layout ---------- */
+
+#container {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem 5rem;
+}
+
+/* ---------- Links ---------- */
+
+a {
+  color: #1a1a1a;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: #aaa;
+  transition: text-decoration-color 0.15s;
+}
+
+a:hover {
+  text-decoration-color: #1a1a1a;
+}
+
+/* ---------- Header ---------- */
+
+header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+#header-text {
+  flex: 1;
+}
+
+h1 {
+  font-size: 1.9rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+  margin-bottom: 0.4rem;
+}
+
+.affiliation {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 0.3rem;
+}
+
+.contact {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+#header-photo {
+  flex-shrink: 0;
+}
+
+#header-photo img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 4px;
+  display: block;
+}
+
+/* ---------- Horizontal rule ---------- */
+
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 0 0 2.5rem;
+}
+
+/* ---------- Sections ---------- */
+
+section {
+  margin-bottom: 2.8rem;
+}
+
+h2 {
+  font-size: 1.05rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 0.8rem;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+/* ---------- Projects ---------- */
+
+.project {
+  margin-bottom: 1.6rem;
+}
+
+.project:last-child {
+  margin-bottom: 0;
+}
+
+.project-title {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.project-meta {
+  font-size: 0.88rem;
+  color: #666;
+  margin-bottom: 0.35rem;
+  font-style: italic;
+}
+
+/* ---------- Lists ---------- */
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 0.9rem;
+  padding-left: 1.1rem;
+  position: relative;
+}
+
+ul li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: #bbb;
+}
+
+/* ---------- Talks ---------- */
+
+.talk-title {
+  font-weight: 500;
+}
+
+/* ---------- KaTeX display math ---------- */
+
+.katex-display {
+  margin: 1.2rem 0;
+  overflow-x: auto;    /* avoids overflow on narrow screens */
+}
+
+/* ---------- Footer ---------- */
+
+footer {
+  margin-top: 3.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #ddd;
+  font-size: 0.85rem;
+  color: #888;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 520px) {
+  html { font-size: 17px; }
+
+  header {
+    flex-direction: column-reverse;
+    gap: 1.2rem;
+  }
+
+  #header-photo img {
+    width: 90px;
+    height: 90px;
+  }
+}

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>S — Mathematics</title>
+
+  <!-- KaTeX -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '\\[', right: '\\]', display: true},
+        {left: '$', right: '$', inline: true},
+        {left: '\\(', right: '\\)', inline: true}
+      ]
+    });"></script>
+
+  <!-- Fonts: EB Garamond (body) + Source Code Pro (mono) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Source+Code+Pro:wght@400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="container">
+
+    <!-- ========== HEADER ========== -->
+    <header>
+      <div id="header-text">
+        <h1>Your Name</h1>
+        <p class="affiliation">
+          Mathematics undergraduate,
+          <a href="https://www.ucl.ac.uk/maths/">University College London</a>
+        </p>
+        <p class="contact">
+          <a href="mailto:your.email@ucl.ac.uk">your.email@ucl.ac.uk</a>
+          &ensp;&middot;&ensp;
+          <a href="notes.html">Notes</a>
+          &ensp;&middot;&ensp;
+          <a href="https://github.com/yourusername">GitHub</a>
+        </p>
+      </div>
+      <div id="header-photo">
+        <!--
+          Replace photo.jpg with your actual photo.
+          Recommended: square crop, ~400×400px.
+        -->
+        <img src="assets/photo.jpg" alt="Photo of Your Name">
+      </div>
+    </header>
+
+    <hr>
+
+    <!-- ========== ABOUT ========== -->
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        I am a second-year mathematics student at UCL, graduating in 2028. My
+        mathematical interests are centred on algebraic geometry, complex
+        geometry, and Riemann surfaces, with a longer-term interest in mirror
+        symmetry and arithmetic geometry.
+      </p>
+      <p>
+        Currently I am studying complex analysis and algebra; I am particularly
+        interested in the interplay between the analytic and algebraic
+        perspectives on curves — for instance, the relationship between the
+        Riemann surface of an algebraic curve and its function field.
+      </p>
+      <p>
+        I am applying for a
+        <a href="https://www.lms.ac.uk/grants/undergraduate-research-bursaries">
+          London Mathematical Society Undergraduate Research Bursary</a>
+        in 2027.
+      </p>
+    </section>
+
+    <!-- ========== RESEARCH / PROJECTS ========== -->
+    <section id="research">
+      <h2>Research &amp; Projects</h2>
+
+      <div class="project">
+        <div class="project-title">
+          Picard–Lindelöf theorem and maximal solutions
+        </div>
+        <div class="project-meta">ODE reading project, UCL, 2024–25</div>
+        <p>
+          A reading project on existence and uniqueness for ordinary differential
+          equations. Topics include the contraction mapping proof of
+          Picard–Lindelöf, continuous dependence on initial data, and the
+          theory of maximal solutions. Presented as a 15-minute colloquium talk.
+        </p>
+      </div>
+
+      <div class="project">
+        <div class="project-title">
+          Bézout's theorem and the group law on cubic curves
+        </div>
+        <div class="project-meta">UCL Mathematics Colloquium, Term 1, 2024–25</div>
+        <p>
+          A talk on intersections of algebraic curves in the projective plane
+          $\mathbb{P}^2_\mathbb{C}$. Starting from the failure of Bézout's
+          theorem in the affine setting, I introduced projective space,
+          sketched a resultant-based proof of Bézout, and applied it to
+          inflection points of cubics and the geometric group law.
+        </p>
+      </div>
+
+    </section>
+
+    <!-- ========== NOTES ========== -->
+    <section id="notes">
+      <h2>Notes</h2>
+      <p>
+        Expository notes written while studying. Corrections and comments are
+        welcome by email.
+      </p>
+      <ul>
+        <li>
+          <a href="notes/complex-analysis.pdf">Complex analysis</a>
+          — notes following Stein–Shakarchi Vol. 2, covering holomorphic
+          functions, Cauchy's theorem, and the residue calculus.
+        </li>
+        <li>
+          <a href="notes/jordan-normal-form.pdf">Jordan normal form</a>
+          — a self-contained account from minimal polynomials to the
+          decomposition theorem; exercises from Axler.
+        </li>
+      </ul>
+    </section>
+
+    <!-- ========== EXPOSITORY: INLINE MATHS EXAMPLE ========== -->
+    <section id="expository">
+      <h2>A favourite result</h2>
+      <p>
+        The Riemann–Hurwitz formula relates the genera of two compact Riemann
+        surfaces connected by a non-constant holomorphic map. If
+        $f \colon X \to Y$ is such a map of degree $d$, with ramification
+        indices $e_p$ at each point $p \in X$, then
+      </p>
+      $$
+        2g(X) - 2 = d\bigl(2g(Y) - 2\bigr) + \sum_{p \in X}(e_p - 1).
+      $$
+      <p>
+        As a corollary, a holomorphic map $f \colon X \to \mathbb{P}^1$ of
+        degree $d$ on a genus-$g$ curve must have at least $2g + 2d - 2$
+        ramification points counted with multiplicity.
+      </p>
+    </section>
+
+    <!-- ========== TALKS ========== -->
+    <section id="talks">
+      <h2>Talks</h2>
+      <ul>
+        <li>
+          <span class="talk-title">Rational points on elliptic curves</span>
+          <br>
+          UCL Mathematics Colloquium, Term 2, 2024–25.
+          Mordell's theorem and an introduction to the BSD conjecture.
+        </li>
+        <li>
+          <span class="talk-title">
+            Picard–Lindelöf: existence, uniqueness, and maximal solutions
+          </span>
+          <br>
+          ODE Reading Project Colloquium, UCL, 2024–25.
+        </li>
+      </ul>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer>
+      <p>
+        Last updated <time datetime="2025-06">June 2025</time>.
+        Built with plain HTML and
+        <a href="https://katex.org">KaTeX</a>.
+      </p>
+    </footer>
+
+  </div><!-- end #container -->
+
+</body>
+</html>
