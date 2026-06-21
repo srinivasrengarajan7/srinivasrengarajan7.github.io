@@ -90,6 +90,32 @@ h1 {
   display: block;
 }
 
+/* ---------- Site nav ---------- */
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 0.88rem;
+  margin-bottom: 1.8rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #555;
+}
+
+nav a:hover {
+  color: #1a1a1a;
+  text-decoration: underline;
+  text-decoration-color: #aaa;
+}
+
+nav a.current {
+  color: #1a1a1a;
+  font-weight: 500;
+}
+
 /* ---------- Horizontal rule ---------- */
 
 hr {
@@ -190,6 +216,11 @@ footer {
 
 @media (max-width: 520px) {
   html { font-size: 17px; }
+
+  nav {
+    justify-content: flex-start;
+    gap: 0.4rem 1.1rem;
+  }
 
   header {
     flex-direction: column-reverse;
